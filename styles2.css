@@ -1,0 +1,37 @@
+<!-- to use this same style file for sub-pages, put it in the root directory with the index html, then link via href="/root-dir/styles.css"-->
+/* Ensure the body uses Arial and respects user's default font size -- moved all this to container */
+body {
+}
+
+/* Make H1 larger using a relative unit that scales with the browser/screen; H1 is bolded by default? */
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1em /* em is scaled to the font size */
+}
+h2 {
+    color: red; /* Or color: #ff0000; or color: rgb(255, 0, 0); */
+    font-size: 1.2rem;
+}
+h3 {
+    color: blue; 
+    font-size: 1.1rem;
+}
+
+/* this scales the image while keeping the aspect ratio */
+.responsive-image {
+  width: 80%;      /* Makes the image take 80% width of its container, like the body text */
+  height: auto;     /* Automatically calculates the height to maintain aspect ratio */
+  max-width: 300px; /* Optional: Sets a maximum size for the image */
+}
+/* the restriction on the text width in body has stopped working, try this */
+.container {
+    width: 80%;       /* Sets the width to 80% of the viewport or parent element */
+    margin: 0 auto;   /* Centers the block; 0 says no top or bottom margins; can also give 4 values */     
+    max-width: 800px; /* Limits width on desktop */
+    /* Optional: Add some padding for better readability - buffer on mobile edges */
+    padding: 0 10px;
+    /* font-family: Verdana, Geneva, sans-serif; This fails to separate 1,l,I */
+    font-family: "Times New Roman", Times, serif;
+    /* Optional: Sets a default size, but still allows scaling */
+    font-size: 1rem;
+}
